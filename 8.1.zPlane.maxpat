@@ -10,43 +10,29 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 1988.0, 1189.0 ],
+		"rect" : [ 34.0, 106.0, 1580.0, 1189.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-62",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 824.0, 717.0, 45.0, 45.0 ]
+					"patching_rect" : [ 45.0, 141.0, 168.0, 20.0 ],
+					"text" : "Constrain to within unit circle"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"channels" : 1,
-					"id" : "obj-61",
-					"lastchannelcount" : 0,
-					"maxclass" : "live.gain~",
+					"id" : "obj-3",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "", "float", "list" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 824.0, 565.0, 48.0, 136.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
-							"parameter_modmode" : 3,
-							"parameter_shortname" : "live.gain~",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
-						}
-
-					}
-,
-					"varname" : "live.gain~"
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 13.0, 141.0, 24.0, 24.0 ],
+					"valuepopup" : 1
 				}
 
 			}
@@ -157,7 +143,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1358.5, 127.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1349.0, 125.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -333,19 +319,21 @@
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 376.0, 222.0, 540.0, 314.0 ],
+					"range" : [ 0.000006000000212, 16.0 ],
 					"setfilter" : [ 0, 0, 1, 0, 0, 40.0, 1.0, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 72.0,
+					"fontsize" : 20.0,
 					"id" : "obj-2",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 5.0, 819.0, 87.0 ],
-					"text" : "Digital Signal Processing"
+					"patching_rect" : [ 667.0, 1.5, 234.0, 74.0 ],
+					"text" : "Digital Signal Processing\nTemple University\nDr. Sam Wells"
 				}
 
 			}
@@ -356,8 +344,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 87.0, 1089.0, 87.0 ],
-					"text" : "Z-Plane"
+					"patching_rect" : [ 13.0, -5.0, 894.0, 87.0 ],
+					"text" : "Z-Plane Sandbox"
 				}
 
 			}
@@ -1357,7 +1345,7 @@
 							"number_style" : "none",
 							"filter" : "atodb",
 							"domain_start" : 0.0,
-							"domain_end" : 24000.0,
+							"domain_end" : 22050.0,
 							"domain_style" : "log",
 							"domain_markers" : [ 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0, 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 1000.0, 2000.0, 3000.0, 4000.0, 5000.0, 6000.0, 7000.0, 8000.0, 9000.0, 10000.0, 20000.0, 22050.0 ],
 							"domain_labels" : [ 10.0, "10", 100.0, "100", 1000.0, "1K", 10000.0, "10K", 20000.0, "20K" ],
@@ -1377,7 +1365,7 @@
 							"number_style" : "none",
 							"filter" : "atodb",
 							"domain_start" : 0.0,
-							"domain_end" : 24000.0,
+							"domain_end" : 22050.0,
 							"domain_style" : "log",
 							"domain_markers" : [  ],
 							"domain_labels" : [  ],
@@ -1397,7 +1385,7 @@
 							"number_style" : "none",
 							"filter" : "atodb",
 							"domain_start" : 0.0,
-							"domain_end" : 24000.0,
+							"domain_end" : 22050.0,
 							"domain_style" : "log",
 							"domain_markers" : [  ],
 							"domain_labels" : [  ],
@@ -1421,7 +1409,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 24.0, 634.0, 80.0, 35.0 ],
+					"patching_rect" : [ 20.0, 589.0, 80.0, 35.0 ],
 					"text" : "noise~"
 				}
 
@@ -1433,8 +1421,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "list", "list", "list" ],
-					"patching_rect" : [ 13.0, 224.0, 310.0, 310.0 ],
-					"pconstrain" : 1
+					"patching_rect" : [ 13.0, 224.0, 310.0, 310.0 ]
 				}
 
 			}
@@ -1504,7 +1491,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
-					"midpoints" : [ 33.5, 681.08984375, 649.5, 681.08984375 ],
+					"midpoints" : [ 29.5, 681.08984375, 649.5, 681.08984375 ],
 					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1558,6 +1545,13 @@
 					"destination" : [ "obj-58", 0 ],
 					"midpoints" : [ 430.5, 639.0, 810.0, 639.0, 810.0, 546.0, 930.0, 546.0, 930.0, 492.0, 995.5, 492.0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -1623,18 +1617,18 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-44", 4 ],
-					"midpoints" : [ 1363.5, 330.0, 1146.0, 330.0, 1146.0, 321.0, 1099.799999999999955, 321.0 ],
-					"order" : 1,
-					"source" : [ "obj-46", 0 ]
+					"midpoints" : [ 1411.5, 330.0, 1146.0, 330.0, 1146.0, 321.0, 1099.799999999999955, 321.0 ],
+					"order" : 0,
+					"source" : [ "obj-46", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 4 ],
-					"midpoints" : [ 1363.5, 564.0, 1146.0, 564.0, 1146.0, 555.0, 1100.299999999999955, 555.0 ],
-					"order" : 0,
-					"source" : [ "obj-46", 0 ]
+					"midpoints" : [ 1411.5, 564.0, 1146.0, 564.0, 1146.0, 555.0, 1100.299999999999955, 555.0 ],
+					"order" : 1,
+					"source" : [ "obj-46", 1 ]
 				}
 
 			}
@@ -1648,15 +1642,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"order" : 1,
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-61", 0 ],
-					"order" : 0,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -1672,22 +1657,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-58", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 1 ],
-					"order" : 0,
-					"source" : [ "obj-61", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
-					"order" : 1,
-					"source" : [ "obj-61", 0 ]
 				}
 
 			}
@@ -1715,20 +1684,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-61" : [ "live.gain~", "live.gain~", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "windowed-fft~.maxpat",
 				"bootpath" : "C74:/help/msp",
